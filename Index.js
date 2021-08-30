@@ -983,13 +983,37 @@ for (i = 1; i <= n; i++) {
 
 // Задача 19)Дано число n. Вывести простое оно или нет
 
+/*
+
+let num = +prompt('Введите число');
+
+let flag = true;
+for (let i = 2; i < num; i++) {
+	if (num % i == 0) {
+		flag = false;
+		break; 
+	}
+}
+
+alert (flag);
+
+*/
+
+
+// Задача 20)Ввели число n. Вывести n-е Число Фибонначи 1 1 2 3 5 8...
+
 //
 
-let n = +prompt ('Введите число', '');
+let fib = +prompt ('');
+let a = 0; 
+let b = 1;
+let c, meter;
 
-for (i = 2; i < n; i++) {
-    if (n % i == 0 ) continue;
+for (let i = 2; i <= fib; i++){
+    c = a + b;
+    a = b;
+    b = c;
 
-    alert (n);
+   // alert (c);
 }
-    //alert ('Число простое');
+alert (c);
