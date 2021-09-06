@@ -525,3 +525,147 @@
     }
 
     */
+
+
+// Задача 30) (1+2)*(1+2+3)*…*(1+2+…+n).
+
+/*
+
+let inputValue = +prompt ("Введите число");
+let multiValue = 1;
+let sumValue = 1;
+
+for (i = 2; i <= inputValue; i++){
+    sumValue += i;
+    multiValue *= sumValue;
+}
+alert (multiValue);
+
+*/
+
+
+// Задача 31) Назовём натуральное число палиндромом, если его запись читается
+// одинаково как с начала так и с конца (пример: 4884, 393, 1, 22). Найти все
+// меньшие 100 натуральные числа, которые являются палиндромами.
+
+/*
+
+for (i = 1; i < 100; i++){
+    if (i < 10){
+        alert (i);
+    }
+    if (i % 11 === 0){
+        alert (i);
+    }
+}
+
+*/
+
+
+// ВЛОЖЕННЫЕ ЦИКЛЫ
+
+// Задача 21) Дано число n. Вывести все простые числа от 1 до n
+
+/*
+
+let n = 10;
+
+for (i = 2; i <= n; i++){
+    for (j = 2; j <= i; j++){
+        if (i % j == 0) {
+            break;
+          } else {
+            alert (i);
+            break;
+        }
+    }
+}
+
+
+*/
+
+/*
+
+let n = 10;
+
+nextPrime:
+for (let i = 2; i <= n; i++) { 
+
+  for (let j = 2; j < i; j++) { 
+    if (i % j == 0) continue nextPrime; 
+  }
+
+  alert( i ); 
+}
+
+*/
+
+/*
+
+let n = 10;
+
+alert (1);
+
+nextCicle:
+for (i = 2; i <= n; i++){
+    for (j = 2; j < i; j++){
+        if (i % j == 0) continue nextCicle;
+    }
+    alert ( i );
+}
+
+*/
+
+
+// Задача 22) Даны целые положительные числа N и K. Найти сумму 1^K + 2^K + ... + N^K.
+
+/*
+
+let n = +prompt ("Введите число N");
+let k = +prompt ("Введите число K");
+let sumNumber = 0;
+
+for (i = 1; i <= n; i++){
+    sumNumber += i ** k; 
+}
+alert (sumNumber);
+
+*/
+
+
+// Задача 23) Дано целое число N  (>  0).  Найти сумму 1^1  +  2^2  +  ...  +  N^N
+
+/*
+
+let n = +prompt ("Введите число N");
+let sumNumber = 0;
+
+for (i = 1; i <= n; i++){
+    sumNumber += i ** i; 
+}
+alert (sumNumber);
+
+*/
+
+
+// Задача 23) )Даны целые положительные числа A и B (A  <  B). 
+//	Вывести все целые числа от A до B включительно; 
+//	при этом каждое число должно выводиться столько раз, каково его значение (например, число 3 выводится 3 раза 333).
+
+/*
+
+let a = +prompt ("Введите число A");
+let b = +prompt ("Введите число B");
+
+for (a; a <= b; a++){
+    connectors = String(a) * a;
+    for (i = 1; i <= a; i++){
+        alert (connectors); 
+    }
+}
+
+*/
+
+let a = "21";
+let b = a * "2";
+alert (b);
