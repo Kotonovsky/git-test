@@ -471,3 +471,57 @@
 
 
 // Задача 27)Найти все числа некратные пяти и кратные 3, и сумма цифр которых
+
+    /*
+
+    let multipleNum = +prompt ("До которого числа искать кратные и некратные числа ?");
+    let sumNumbs = 0;
+
+    for (let i = 1; i <= multipleNum; i++){
+        if ((i % 5 != 0) && (i % 3 == 0)){
+            alert (i);
+            sumNumbs += i;
+        }
+    }
+    alert (`Сумма чисел равна ${sumNumbs}`);
+
+    */
+
+
+// Задача 28) Разложить заданное число на простые множители.
+
+    /*
+
+    let givenNumber = +prompt ('Введите число');
+
+    for (let i = 1; i <= givenNumber; i++){
+        if (givenNumber % i === 0){
+            alert (`${givenNumber / i} * ${i}`);
+        }
+    }
+
+    */
+
+
+// Задача 29) Число, равное сумме всех своих делителей, включая единицу, называется совершенным. Найти и напечатать все совершенные числа в
+// интервале от 2 до х.
+
+    /*
+
+    let givenNumber = +prompt ('До какого числа искать совершенные числа?');
+
+    for (let i = 1; i < givenNumber; i++){
+        
+        let sumNumber = 0; // if another place - don`t work, need update number after every cycle
+        
+        for (let j = 1; j < i; j++){
+            if (i % j == 0){
+            sumNumber = sumNumber + j;
+            }
+        }
+        if (sumNumber === i){
+        alert (i);
+        }   
+    }
+
+    */
